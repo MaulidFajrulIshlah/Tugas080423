@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".FragmentProfil">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        style="@style/customText"
+        android:id="@+id/tvProfil"
+        android:gravity="center"
+        android:text="Profil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        style="@style/customText"
+        android:layout_below="@id/tvProfil"
+        android:id="@+id/tvNamaP"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:text="Nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Button
+        android:id="@+id/btnLogoutP"
+        android:layout_centerInParent="true"
+        android:layout_alignParentBottom="true"
+        android:text="Logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

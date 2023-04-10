@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_comp"
+    app:startDestination="@id/fragmentLogin">
+
+    <fragment
+        android:id="@+id/fragmentLogin"
+        android:name="com.geminiboy.tugas080423.FragmentLogin"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_fragmentLogin_to_fragmentHome"
+            app:destination="@id/fragmentHome" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentHome"
+        android:name="com.geminiboy.tugas080423.FragmentHome"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentProfil"
+            app:destination="@id/fragmentProfil" />
+        <action
+            android:id="@+id/action_fragmentHome_to_fragmentDetailFilm"
+            app:destination="@id/fragmentDetailFilm" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentProfil"
+        android:name="com.geminiboy.tugas080423.FragmentProfil"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" >
+        <action
+            android:id="@+id/action_fragmentProfil_to_fragmentLogin"
+            app:destination="@id/fragmentLogin" />
+    </fragment>
+    <fragment
+        android:id="@+id/fragmentDetailFilm"
+        android:name="com.geminiboy.tugas080423.FragmentDetailFilm"
+        android:label="fragment_detail_film"
+        tools:layout="@layout/fragment_detail_film" />
+</navigation>
